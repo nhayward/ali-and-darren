@@ -1,5 +1,5 @@
 ---
-title: Home
+title: The Story
 body_classes: title-center title-h1h2
 ---
 
