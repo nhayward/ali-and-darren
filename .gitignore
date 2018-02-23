@@ -13,3 +13,8 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
+
+# Server
+404.shtml
+home.html
+layout-styles.css
