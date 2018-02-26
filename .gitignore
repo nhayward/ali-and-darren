@@ -1,3 +1,7 @@
+# Sass
+.sass-cache/
+style.css.map
+
 # Server
 404.shtml
 home.html
