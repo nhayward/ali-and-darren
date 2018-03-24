@@ -2,19 +2,37 @@
 <html>
 <head>
     <title>Ali and Darren</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
 
+    <div id="mobile-menu-curtain"></div>
     <nav>
-        <a data-content="story">The Story</a>
-        <a data-content="travel">The Travel Info</a>
-        <a data-content="event">The Main Event</a>
-        <a data-content="rsvp">The RSVP</a>
-        <a data-content="registry">The Registry</a>
+        <a class="nav-item" data-content="story">The Story</a>
+        <a class="nav-item" data-content="travel">The Travel Info</a>
+        <a class="nav-item" data-content="event">The Main Event</a>
+        <a class="nav-item" data-content="rsvp">The RSVP</a>
+        <a class="nav-item" data-content="registry">The Registry</a>
+        <div id="mobile-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="mobile-menu">
+            <a class="nav-item" data-content="story">The Story</a><br>
+            <a class="nav-item" data-content="travel">The Travel Info</a><br>
+            <a class="nav-item" data-content="event">The Main Event</a><br>
+            <a class="nav-item" data-content="rsvp">The RSVP</a><br>
+            <a class="nav-item" data-content="registry">The Registry</a>
+        </div>
     </nav>
+
+    <section id="monogram">
+        <img src="/img/monogram.png">
+    </section>
 
     <section id="content-container" style="display: none;">
         <span id="close">&#10006;</span>
