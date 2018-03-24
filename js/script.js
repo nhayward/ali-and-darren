@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $urlNoSlash = window.location.href.replace(/\/$/, "");
+    history.replaceState(null, null, $urlNoSlash);
 
     $('nav .nav-item').click(function(e) {
         $('nav .nav-item').removeClass('active');
