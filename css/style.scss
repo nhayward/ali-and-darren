@@ -17,6 +17,41 @@ body {
         text-decoration: none;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Arizonia', Helvetica, sans-serif;
+        color: $gold;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.17em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: .83em;
+    }
+
+    h6 {
+        font-size: .67em;
+    }
+
+    .center {
+        text-align: center;
+    }
+
     #mobile-menu-curtain {
         display: none;
         position: absolute;
@@ -35,6 +70,7 @@ body {
         min-height: 51px;
         width: 100%;
         background-color: $white;
+        font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
         text-transform: uppercase;
         text-align: center;
         z-index: 1;

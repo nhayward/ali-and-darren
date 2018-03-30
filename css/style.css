@@ -10,6 +10,25 @@ body {
   body a {
     color: #ba9261;
     text-decoration: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Arizonia', Helvetica, sans-serif;
+    color: #ba9261;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  body h1 {
+    font-size: 2em; }
+  body h2 {
+    font-size: 1.5em; }
+  body h3 {
+    font-size: 1.17em; }
+  body h4 {
+    font-size: 1em; }
+  body h5 {
+    font-size: .83em; }
+  body h6 {
+    font-size: .67em; }
+  body .center {
+    text-align: center; }
   body #mobile-menu-curtain {
     display: none;
     position: absolute;
@@ -26,6 +45,7 @@ body {
     min-height: 51px;
     width: 100%;
     background-color: #fafafa;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
     text-transform: uppercase;
     text-align: center;
     z-index: 1; }
