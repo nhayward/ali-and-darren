@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 45%;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   color: #fafafa; }
   body a {
@@ -112,8 +112,27 @@ body {
   body section#monogram {
     margin-top: 3rem;
     text-align: center; }
-    body section#monogram img {
-      max-width: 400px; }
+    body section#monogram svg #graphic {
+      stroke-dasharray: 9600;
+      stroke-dashoffset: 9600;
+      fill-opacity: 0;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-iteration: 1;
+      animation-name: DrawLine, FadeStroke, FillIn;
+      animation-duration: 2s, 1s, 1s;
+      animation-delay: 1s, 3s, 3s; }
+@keyframes DrawLine {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes FadeStroke {
+  to {
+    stroke-opacity: 0; } }
+@keyframes FillIn {
+  from {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: 1; } }
   body section#content-container {
     position: relative;
     max-width: 800px;
