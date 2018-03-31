@@ -32,6 +32,7 @@ $(document).ready(function() {
     });
 
     $('#rsvp-form').submit(function(e) {
+        e.preventDefault();
         $.getScript('/js/GSheetAsDB.min.js', function() {
             $.holdReady(true);
             var gsheet = {

@@ -375,18 +375,53 @@
     </section>
 
     <section id="content-container">
-        <span id="close">&#10006;</span>
+        <span id="close">&times;</span>
         
         <section id="content">
             <form id="rsvp-form">
-                <label>Name: <input type="text" name="name"></label><br>
-                <label>Email: <input type="text" name="email"></label><br>
-                <label>Attending?: 
-                    <label>Yes <input type="radio" value="Yes" name="attending"></label>
-                    <label>No <input type="radio" value="No" name="attending"></label>
-                </label><br>
-                <label>Number of Attendees: <input type="number" name="attendees"></label><br>
-                <input type="submit" value="Submit">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="label">
+                                <label>Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">
+                                <label>Email:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">
+                                <label>Attending?:</label>
+                            </td>
+                            <td>
+                                <label>Yes <input type="radio" value="Yes" name="attending"></label>
+                                <label>No <input type="radio" value="No" name="attending"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">
+                                <label>Number of Attendees:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="attendees">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </section>
     </section>

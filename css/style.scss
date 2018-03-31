@@ -240,10 +240,26 @@ body {
 
         #close {
             position: absolute;
-            top: 0;
+            top: -13px;
             right: 5px;
-            font-size: 2rem;
+            font-size: 3rem;
             cursor: pointer;
+        }
+
+        #rsvp-form {
+
+            table {
+
+                td {
+
+                    &.label {
+                        text-align: right;
+                    }
+
+                }
+
+            }
+
         }
 
     }

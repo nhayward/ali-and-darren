@@ -162,10 +162,12 @@ body {
     padding: 1rem; }
     body section#content-container #close {
       position: absolute;
-      top: 0;
+      top: -13px;
       right: 5px;
-      font-size: 2rem;
+      font-size: 3rem;
       cursor: pointer; }
+    body section#content-container #rsvp-form table td.label {
+      text-align: right; }
   body footer {
     position: fixed;
     bottom: 0;
