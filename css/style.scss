@@ -254,6 +254,17 @@ body {
                 flex: 0 1 50%;
             }
 
+            &#registry-images {
+                align-items: center;
+                justify-content: center;
+
+                .registry-image {
+                    margin: 1rem 0;
+                    text-align: center;
+                }
+
+            }
+
         }
 
         #rsvp-form {

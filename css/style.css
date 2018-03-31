@@ -171,6 +171,12 @@ body {
       flex-flow: row wrap; }
       body section#content-container .column-section .column {
         flex: 0 1 50%; }
+      body section#content-container .column-section#registry-images {
+        align-items: center;
+        justify-content: center; }
+        body section#content-container .column-section#registry-images .registry-image {
+          margin: 1rem 0;
+          text-align: center; }
     body section#content-container #rsvp-form {
       text-align: center; }
       body section#content-container #rsvp-form input {
