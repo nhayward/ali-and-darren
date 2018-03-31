@@ -246,18 +246,36 @@ body {
             cursor: pointer;
         }
 
+        .column-section {
+            display: flex;
+            flex-flow: row wrap;
+
+            .column {
+                flex: 0 1 50%;
+            }
+
+        }
+
         #rsvp-form {
+            text-align: center;
 
-            table {
+            input {
+                border: 1px solid $white;
+                background-color: transparent;
+                margin: 0.3rem auto;
+                padding: 0.5rem;
+                color: $white;
+                font-size: 1rem;
 
-                td {
-
-                    &.label {
-                        text-align: right;
-                    }
-
+                &[name="phone"] {
+                    display: none;
                 }
 
+            }
+
+            #rsvp-submit {
+                border: none;
+                background-color: $gold;
             }
 
         }

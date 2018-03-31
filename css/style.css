@@ -166,8 +166,25 @@ body {
       right: 5px;
       font-size: 3rem;
       cursor: pointer; }
-    body section#content-container #rsvp-form table td.label {
-      text-align: right; }
+    body section#content-container .column-section {
+      display: flex;
+      flex-flow: row wrap; }
+      body section#content-container .column-section .column {
+        flex: 0 1 50%; }
+    body section#content-container #rsvp-form {
+      text-align: center; }
+      body section#content-container #rsvp-form input {
+        border: 1px solid #fafafa;
+        background-color: transparent;
+        margin: 0.3rem auto;
+        padding: 0.5rem;
+        color: #fafafa;
+        font-size: 1rem; }
+        body section#content-container #rsvp-form input[name="phone"] {
+          display: none; }
+      body section#content-container #rsvp-form #rsvp-submit {
+        border: none;
+        background-color: #ba9261; }
   body footer {
     position: fixed;
     bottom: 0;

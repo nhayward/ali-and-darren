@@ -379,50 +379,14 @@
         
         <section id="content">
             <h1 class="center">The RSVP</h1>
+            <p class="center">Kindly respond by<br>December 22, 2018</p>
             <form id="rsvp-form">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="label">
-                                <label>Name:</label>
-                            </td>
-                            <td>
-                                <input type="text" name="name">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">
-                                <label>Email:</label>
-                            </td>
-                            <td>
-                                <input type="text" name="email">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">
-                                <label>Attending?:</label>
-                            </td>
-                            <td>
-                                <label>Yes <input type="radio" value="Yes" name="attending"></label>
-                                <label>No <input type="radio" value="No" name="attending"></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">
-                                <label>Number of Attendees:</label>
-                            </td>
-                            <td>
-                                <input type="number" name="attendees">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="submit" value="Submit">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <input type="text" name="name" placeholder="Your Full Name(s)" required><br>
+                <label>Will Attend <input type="radio" value="Yes" name="attending" required></label><br>
+                <label>Unable to Attend <input type="radio" value="No" name="attending" required></label><br>
+                Number of Invited Guests Attending: <input type="number" name="attendees" min="0" max="9" required><br>
+                <input type="text" name="phone" value="">
+                <input id="rsvp-submit" type="submit" value="Submit">
             </form>
         </section>
     </section>
