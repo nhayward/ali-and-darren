@@ -43,7 +43,6 @@ $(document).ready(function() {
                 initSheetData([gsheet]);
                 var data = {
                     "Name": $('#rsvp-form input[name="name"]').val(),
-                    "Email": $('#rsvp-form input[name="email"]').val(),
                     "Attending": $('#rsvp-form input[name="attending"]:checked').val(),
                     "Number of Attendees": $('#rsvp-form input[name="attendees"]').val()
                 };
