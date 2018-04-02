@@ -267,26 +267,32 @@ body {
 
         }
 
-        #rsvp-form {
+        #rsvp-form-container {
             text-align: center;
 
-            input {
-                border: 1px solid $white;
-                background-color: transparent;
-                margin: 0.3rem auto;
-                padding: 0.5rem;
-                color: $white;
-                font-size: 1rem;
+            #rsvp-form {
 
-                &[name="phone"] {
-                    display: none;
+                input {
+                    border: 1px solid $white;
+                    background-color: transparent;
+                    margin: 0.3rem auto;
+                    padding: 0.5rem;
+                    color: $white;
+                    font-size: 1rem;
+
+                    &[name="phone"] {
+                        display: none;
+                    }
+
                 }
 
-            }
+                #rsvp-submit {
+                    border: none;
+                    background-color: $gold;
+                    padding: 0.5rem 1rem;
+                    font-size: 1rem;
+                }
 
-            #rsvp-submit {
-                border: none;
-                background-color: $gold;
             }
 
         }

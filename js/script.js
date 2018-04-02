@@ -31,28 +31,32 @@ $(document).ready(function() {
         $('#mobile-menu-icon').click();
     });
 
-    $('#rsvp-form').submit(function(e) {
-        e.preventDefault();
-        if ($('input[name="phone"]').val() == "") {
-            $.getScript('/js/GSheetAsDB.min.js', function() {
-                $.holdReady(true);
-                var gsheet = {
-                  "id": "1HLJsqslEF_VqKPH4uHbb_6Zk-ARvgY7sOEiOEifDDy4",
-                  "postScriptURL": "https://script.google.com/macros/s/AKfycbz_yZI5Cf_JEYomeSi3WVJGn7q4VJ5zYrdlQdS9_Sbh-Wb8lTaP/exec"
-                };
-                initSheetData([gsheet]);
-                var data = {
-                    "Name": $('#rsvp-form input[name="name"]').val(),
-                    "Attending": $('#rsvp-form input[name="attending"]:checked').val(),
-                    "Number of Attendees": $('#rsvp-form input[name="attendees"]').val()
-                };
-                postDataToSheet(data, gsheet, false);
-                $('#content').html("Thanks for RSVP'ing!");
-            });
-        } else {
-            alert("Go away, robot");
-        }
-        return false;
-    });
-
 });
+
+function postRSVPToGoogle() {
+    if ($('input[name="phone"]').val() == "") {
+        if ($('#rsvp-form input[name="name"]').val() == "" ||
+            $('#rsvp-form input[name="attending"]:checked').val() == "" ||
+            $('#rsvp-form input[name="attendees"]').val() == "") {
+            alert("Please fill out all fields");
+            return;
+        }
+        $.getScript('/js/GSheetAsDB.min.js', function() {
+            $.holdReady(true);
+            var gsheet = {
+              "id": "1HLJsqslEF_VqKPH4uHbb_6Zk-ARvgY7sOEiOEifDDy4",
+              "postScriptURL": "https://script.google.com/macros/s/AKfycbz_yZI5Cf_JEYomeSi3WVJGn7q4VJ5zYrdlQdS9_Sbh-Wb8lTaP/exec"
+            };
+            initSheetData([gsheet]);
+            var data = {
+                "Name": $('#rsvp-form input[name="name"]').val(),
+                "Attending": $('#rsvp-form input[name="attending"]:checked').val(),
+                "Number of Attendees": $('#rsvp-form input[name="attendees"]').val()
+            };
+            postDataToSheet(data, gsheet, false);
+            $('#rsvp-form-container').html("<p>Thanks for RSVP'ing!</p>");
+        });
+    } else {
+        alert("Go away, robot");
+    }
+}

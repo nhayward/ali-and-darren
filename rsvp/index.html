@@ -379,15 +379,17 @@
         
         <section id="content">
             <h1 class="center">The RSVP</h1>
-            <p class="center">Kindly respond by<br>December 22, 2018</p>
-            <form id="rsvp-form">
-                <input type="text" name="name" placeholder="Your Full Name(s)" required><br>
-                <label>Will Attend <input type="radio" value="Yes" name="attending" required></label><br>
-                <label>Unable to Attend <input type="radio" value="No" name="attending" required></label><br>
-                Number of Invited Guests Attending: <input type="number" name="attendees" min="0" max="9" required><br>
-                <input type="text" name="phone" value="">
-                <input id="rsvp-submit" type="submit" value="Submit">
-            </form>
+            <div id="rsvp-form-container">
+                <p class="center">Kindly respond by<br>December 22, 2018</p>
+                <div id="rsvp-form">
+                    <input type="text" name="name" placeholder="Your Full Name(s)" required><br>
+                    <label>Will Attend <input type="radio" value="Yes" name="attending" required></label><br>
+                    <label>Unable to Attend <input type="radio" value="No" name="attending" required></label><br>
+                    Number of Invited Guests Attending: <input type="number" name="attendees" min="0" max="9" required><br>
+                    <input type="text" name="phone" value="">
+                    <button id="rsvp-submit" type="button" onclick="postRSVPToGoogle()">Submit</button>
+                </div>
+            </div>
         </section>
     </section>
 

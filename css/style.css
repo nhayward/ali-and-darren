@@ -177,20 +177,22 @@ body {
         body section#content-container .column-section#registry-images .registry-image {
           margin: 1rem 0;
           text-align: center; }
-    body section#content-container #rsvp-form {
+    body section#content-container #rsvp-form-container {
       text-align: center; }
-      body section#content-container #rsvp-form input {
+      body section#content-container #rsvp-form-container #rsvp-form input {
         border: 1px solid #fafafa;
         background-color: transparent;
         margin: 0.3rem auto;
         padding: 0.5rem;
         color: #fafafa;
         font-size: 1rem; }
-        body section#content-container #rsvp-form input[name="phone"] {
+        body section#content-container #rsvp-form-container #rsvp-form input[name="phone"] {
           display: none; }
-      body section#content-container #rsvp-form #rsvp-submit {
+      body section#content-container #rsvp-form-container #rsvp-form #rsvp-submit {
         border: none;
-        background-color: #ba9261; }
+        background-color: #ba9261;
+        padding: 0.5rem 1rem;
+        font-size: 1rem; }
   body footer {
     position: fixed;
     bottom: 0;
