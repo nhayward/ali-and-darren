@@ -170,8 +170,15 @@ body {
       display: flex;
       flex-flow: row wrap; }
       body section#content-container .column-section .column {
-        flex: 1 1 46%;
-        padding: 20px 30px 20px 0; }
+        flex: 1 1 48%;
+        padding: 20px 0; }
+        body section#content-container .column-section .column.left-column {
+          padding-right: 30px; }
+        @media (max-width: 781px) {
+          body section#content-container .column-section .column {
+            flex-basis: 51%; }
+            body section#content-container .column-section .column.left-column {
+              padding-right: 0; } }
       body section#content-container .column-section#registry-images {
         align-items: center;
         justify-content: center; }

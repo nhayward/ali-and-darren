@@ -251,8 +251,21 @@ body {
             flex-flow: row wrap;
 
             .column {
-                flex: 1 1 46%;
-                padding: 20px 30px 20px 0;
+                flex: 1 1 48%;
+                padding: 20px 0;
+
+                &.left-column {
+                    padding-right: 30px;
+                }
+
+                @media(max-width: 781px) {
+                    flex-basis: 51%;
+
+                    &.left-column {
+                        padding-right: 0;
+                    }
+                }
+
             }
 
             &#registry-images {
