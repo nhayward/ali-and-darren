@@ -170,7 +170,8 @@ body {
       display: flex;
       flex-flow: row wrap; }
       body section#content-container .column-section .column {
-        flex: 0 1 50%; }
+        flex: 1 1 46%;
+        padding: 20px 30px 20px 0; }
       body section#content-container .column-section#registry-images {
         align-items: center;
         justify-content: center; }

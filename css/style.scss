@@ -251,7 +251,8 @@ body {
             flex-flow: row wrap;
 
             .column {
-                flex: 0 1 50%;
+                flex: 1 1 46%;
+                padding: 20px 30px 20px 0;
             }
 
             &#registry-images {
