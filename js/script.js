@@ -31,6 +31,15 @@ $(document).ready(function() {
         $('#mobile-menu-icon').click();
     });
 
+    $('input[name="attending"]').click(function() {
+        if ($(this, ":checked").val() == "Yes") {
+            $('input[name="attendees"]').attr("disabled", false);
+        } else {
+            $('input[name="attendees"]').attr("disabled", true);
+            $('input[name="attendees"]').val("0");
+        }
+    });
+
 });
 
 function postRSVPToGoogle() {
