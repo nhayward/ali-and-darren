@@ -140,43 +140,47 @@ body {
   body section#monogram {
     margin-top: 3rem;
     text-align: center; }
-    body section#monogram svg #graphic {
-      stroke-dasharray: 9600;
-      stroke-dashoffset: 9600;
-      fill-opacity: 0;
-      -webkit-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      animation-iteration: 1;
-      -webkit-animation-name: DrawLine, FadeStroke, FillIn;
-      animation-name: DrawLine, FadeStroke, FillIn;
-      -webkit-animation-duration: 2s, 1s, 1s;
-      animation-duration: 2s, 1s, 1s;
-      -webkit-animation-delay: 1s, 3s, 3s;
-      animation-delay: 1s, 3s, 3s; }
-@-webkit-keyframes DrawLine {
-  to {
-    stroke-dashoffset: 0; } }
-@keyframes DrawLine {
-  to {
-    stroke-dashoffset: 0; } }
-@-webkit-keyframes FadeStroke {
-  to {
-    stroke-opacity: 0; } }
-@keyframes FadeStroke {
-  to {
-    stroke-opacity: 0; } }
-@-webkit-keyframes FillIn {
-  from {
-    fill-opacity: 0; }
-  to {
-    fill-opacity: 1; } }
-@keyframes FillIn {
-  from {
-    fill-opacity: 0; }
-  to {
-    fill-opacity: 1; } }
+    @supports not (-ms-ime-align: auto) {
+      body section#monogram svg #graphic {
+        stroke-dasharray: 9600;
+        stroke-dashoffset: 9600;
+        fill-opacity: 0;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-iteration: 1;
+        -webkit-animation-name: DrawLine, FadeStroke, FillIn;
+        animation-name: DrawLine, FadeStroke, FillIn;
+        -webkit-animation-duration: 2s, 1s, 1s;
+        animation-duration: 2s, 1s, 1s;
+        -webkit-animation-delay: 1s, 3s, 3s;
+        animation-delay: 1s, 3s, 3s; }
+      @-webkit-keyframes DrawLine {
+        to {
+          stroke-dashoffset: 0; } }
+      @keyframes DrawLine {
+        to {
+          stroke-dashoffset: 0; } }
+      @-webkit-keyframes FadeStroke {
+        to {
+          stroke-opacity: 0; } }
+      @keyframes FadeStroke {
+        to {
+          stroke-opacity: 0; } }
+      @-webkit-keyframes FillIn {
+        from {
+          fill-opacity: 0; }
+        to {
+          fill-opacity: 1; } }
+      @keyframes FillIn {
+        from {
+          fill-opacity: 0; }
+        to {
+          fill-opacity: 1; } } }
+    @supports (-ms-ime-align: auto) {
+      body section#monogram svg #graphic {
+        stroke: none; } }
   body section#content-container {
     position: relative;
     max-width: 800px;
@@ -208,7 +212,7 @@ body {
           padding-right: 15px; }
         body section#content-container .column-section .column:not(.left-column) {
           padding-left: 15px; }
-        @media (max-width: 781px) {
+        @media (max-width: 798px) {
           body section#content-container .column-section .column {
             -ms-flex-preferred-size: 51%;
             flex-basis: 51%; }
