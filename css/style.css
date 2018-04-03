@@ -181,6 +181,9 @@ body {
     @supports (-ms-ime-align: auto) {
       body section#monogram svg #graphic {
         stroke: none; } }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      body section#monogram svg #graphic {
+        stroke: none; } }
   body section#content-container {
     position: relative;
     max-width: 800px;
