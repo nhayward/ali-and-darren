@@ -31,7 +31,7 @@ $(document).ready(function() {
         $('#mobile-menu-icon').click();
     });
 
-    $('input[name="attending"]').click(function() {
+    $('#content-container').on('click', 'input[name="attending"]', function() {
         if ($(this, ":checked").val() == "Yes") {
             $('input[name="attendees"]').attr("disabled", false);
         } else {
