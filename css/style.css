@@ -245,6 +245,8 @@ body {
         padding: 0.5rem;
         color: #fafafa;
         font-size: 1rem; }
+        body section#content-container #rsvp-form-container #rsvp-form input[name="attendees"] {
+          max-width: 30px; }
         body section#content-container #rsvp-form-container #rsvp-form input[name="phone"] {
           display: none; }
       body section#content-container #rsvp-form-container #rsvp-form #rsvp-submit {

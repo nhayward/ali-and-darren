@@ -376,6 +376,10 @@ body {
                     color: $white;
                     font-size: 1rem;
 
+                    &[name="attendees"] {
+                        max-width: 30px;
+                    }
+
                     &[name="phone"] {
                         display: none;
                     }
