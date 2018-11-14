@@ -41,6 +41,9 @@ body {
     font-size: 1.5em; }
   body .center {
     text-align: center; }
+  body .center-block {
+    display: block;
+    margin: auto; }
   body #mobile-menu-curtain {
     display: none;
     position: absolute;
@@ -192,8 +195,7 @@ body {
     max-width: 800px;
     margin: 0 auto 3rem;
     border-radius: 5px;
-    opacity: .85;
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.85);
     padding: 1rem; }
     body section#content-container #close {
       position: absolute;
@@ -241,7 +243,7 @@ body {
       body section#content-container #rsvp-form-container #rsvp-form input {
         border: 1px solid #fafafa;
         background-color: transparent;
-        margin: 0.3rem auto;
+        margin: 0.5rem auto;
         padding: 0.5rem;
         color: #fafafa;
         font-size: 1rem; }
@@ -250,6 +252,7 @@ body {
         body section#content-container #rsvp-form-container #rsvp-form input[name="phone"] {
           display: none; }
       body section#content-container #rsvp-form-container #rsvp-form #rsvp-submit {
+        margin-top: 0.5rem;
         border: none;
         background-color: #ba9261;
         padding: 0.5rem 1rem;

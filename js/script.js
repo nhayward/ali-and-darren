@@ -60,7 +60,8 @@ function postRSVPToGoogle() {
             var data = {
                 "Name": $('#rsvp-form input[name="name"]').val(),
                 "Attending": $('#rsvp-form input[name="attending"]:checked').val(),
-                "Number of Attendees": $('#rsvp-form input[name="attendees"]').val()
+                "Number of Attendees": $('#rsvp-form input[name="attendees"]').val(),
+                "Brunch": $('#rsvp-form input[name="brunch"]:checked').val() ? $('#rsvp-form input[name="brunch"]:checked').val() : ""
             };
             postDataToSheet(data, gsheet, false);
             $('#rsvp-form-container').html("<p>Thanks for RSVP'ing!</p>");
