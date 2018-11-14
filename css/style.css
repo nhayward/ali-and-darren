@@ -39,6 +39,8 @@ body {
     font-size: 1.7em; }
   body h6 {
     font-size: 1.5em; }
+  body img {
+    max-width: 100%; }
   body .center {
     text-align: center; }
   body .center-block {
