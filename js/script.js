@@ -16,8 +16,8 @@ $(document).ready(function() {
     $('#content-container #close').click(function(e) {
         $('nav .nav-item').removeClass('active');
         $('#content-container').fadeOut(function() {
-            history.pushState(null, null, '/');
-            $('#content').load('/index.html #content >');
+            history.pushState(null, null, '/ali-and-darren');
+            $('#content').load('/ali-and-darren/index.html #content >');
         });
     });
 
