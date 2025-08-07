@@ -7,8 +7,8 @@ $(document).ready(function() {
         $('nav .nav-item[data-content=' + $(this).attr('data-content') + ']').addClass('active');
         $that = $(this);
         $('#content-container').fadeOut(function() {
-            history.pushState(null, null, $that.attr('data-content'));
-            $('#content').load('/' + $that.attr('data-content') + '/index.html #content >');
+            history.pushState(null, null, '/ali-and-darren/' + $that.attr('data-content'));
+            $('#content').load('/ali-and-darren/' + $that.attr('data-content') + '/index.html #content >');
         });
         $('#content-container').fadeIn();
     });
